@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleall.css">
+    <title>Contact page</title>
+</head>
+
+<body class="active">
+
+    <header>
+        <h1>My Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="changePage('index.html');">Home</a></li>
+                <li><a href="experience.html" onclick="changePage('experience.html');">Experience</a></li>
+                <li><a href="projects.html" onclick="changePage('projects.html');">Projects</a></li>
+                <li><a href="contact.html" onclick="changePage('contact.html');">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <main class="active">
+            <article>
+                <h2>Telephone</h2>
+                <p>Tel : 097-296-2901</p>
+            </article>
+    
+            <article>
+                <h2>Gmail</h2>
+                <p>Mail : ping.panawat99@gmail.com</p>
+            </article>
+    
+            <article>
+                <h2>Address</h2>
+                <p>Address : 180/4  Moo 2 , Kaoliew , Nakhon Sawan   60230</p>
+            </article>
+
+            <article>
+                <h2>Facebook</h2>
+                <p>Facebook name : Ping Panawat</p>
+            </article>
+
+            <article>
+                <h2>Line</h2>
+                <p>Line id : pinggysmile</p>
+            </article>
+
+            <article>
+                <h2>Instagram</h2>
+                <p>IG : __thisisping__</p>
+            </article>
+    
+    
+        </main>
+
+    </main>
+
+    <script>
+        function changePage(page) {
+            document.body.classList.remove('active');
+            setTimeout(function() {
+                window.location.href = page;
+            }, 100);
+        }
+    </script>
+
+</body>
+
+</html>

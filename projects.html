@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleall.css">
+    <title>Projects page</title>
+</head>
+
+<body class="active">
+
+    <header>
+        <h1>My Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="changePage('index.html');">Home</a></li>
+                <li><a href="experience.html" onclick="changePage('experience.html');">Experience</a></li>
+                <li><a href="projects.html" onclick="changePage('projects.html');">Projects</a></li>
+                <li><a href="contact.html" onclick="changePage('contact.html');">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <main class="active">
+            <article>
+                <h2>Mini Projects</h2>
+                <p>2021: Developed a sensor for agriculture, integrated with the Line application. Strong teamwork demonstrated.</p>
+            </article>
+    
+            <article>
+                <h2>My Project</h2>
+                <p>My Project is currently do .it not done yet but i will explain about my project i do.My project's name The presentation of the working data of the robotic arm for object sorting controlled by the ESP32 microcontroller through the IoT systemIt all about robotarm automation and connect to NODE-RED to manage data of product.My propose to do are all about to decrease human work and rely on mechine</p>
+            </article>
+    
+    
+        </main>
+
+    </main>
+
+    <script>
+        function changePage(page) {
+            document.body.classList.remove('active');
+            setTimeout(function() {
+                window.location.href = page;
+            }, 100);
+        }
+    </script>
+
+</body>
+
+</html>

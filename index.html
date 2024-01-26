@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleall.css">
+    <title>Home page</title>
+</head>
+
+<body class="active">
+
+    <header>
+        <h1>My Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="changePage('index.html');">Home</a></li>
+                <li><a href="experience.html" onclick="changePage('experience.html');">Experience</a></li>
+                <li><a href="projects.html" onclick="changePage('projects.html');">Projects</a></li>
+                <li><a href="contact.html" onclick="changePage('contact.html');">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>About Me</h2>
+            <figure>
+                <img src="ping.jpg" alt="Panwat Rattanapornwong's picture">
+            </figure>
+            <div class="bio">
+                <p>My name is Panwat Rattanapornwong. You can call me Ping. I'm an engineering student studying electronic and computer engineering at Silpakorn University.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <figure>
+                <figcaption>
+                    <p>Bachelor's Degree</p>
+                    <p>2020 - Present: Silpakorn University, Sanamchandra Palace Campus</p>
+                    <p>GPA: 2.56</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Badminton, Basketball, Streaming games, Gaming, Fitness</p>
+        </section>
+
+    </main>
+
+    <script>
+        function changePage(page) {
+            document.body.classList.remove('active');
+            setTimeout(function() {
+                window.location.href = page;
+            }, 100);
+        }
+    </script>
+
+</body>
+
+</html>

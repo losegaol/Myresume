@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleall.css">
+    <title>Experience Page</title>
+</head>
+
+<body class="active">
+
+    <header>
+        <h1>My Experience</h1>
+        <nav>
+    <ul>
+        <li><a href="index.html" onclick="changePage('index.html');" class="active">Home</a></li>
+        <li><a href="experience.html" onclick="changePage('experience.html');">Experience</a></li>
+        <li><a href="projects.html" onclick="changePage('projects.html');">Projects</a></li>
+        <li><a href="contact.html" onclick="changePage('contact.html');">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main class="active">
+        <article>
+            <h2>Part-time</h2>
+            <p>2020: Streamer at Facebook, developing communication skills.</p>
+        </article>
+        <article>
+            <h2>Competition</h2>
+            <p>2021: Mini Projects poster at the Department of Electrical Engineering, Silpakorn University.</p>
+        </article>
+        <article>
+            <h2>Internship</h2>
+            <p>Internship with SkyIct company.This company is about security,technology and Iot.I do inturnship for 2 month every moment on this company and coworker so much cute and friendly if i educated , i think SkyIct in on my choice for sure . </p>
+        </article>
+        <article>
+            <h2>Language</h2>
+            <p>English: Communicative and proficient reading skills (B1 level).</p>
+        </article>
+        <article>
+            <h2>Certificates</h2>
+            <p>2022: Developed with ESP32 MQTT and Node-RED (2 days).</p>
+            <p>2022: How to make Function and Class in Python (2 days).</p>
+        </article>
+
+    </main>
+
+    <script>
+        function changePage(page) {
+            document.body.classList.remove('active');
+            document.querySelector('main').classList.remove('active');
+            document.querySelectorAll('nav ul li').forEach(link => link.classList.remove('active'));
+            setTimeout(function () {
+                window.location.href = page;
+            }, 100);
+        }
+    </script>
+
+</body>
+
+</html>
